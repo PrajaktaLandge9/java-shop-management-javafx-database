@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" fx:controller="edit_product.EditProductController" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="561.0" prefWidth="755.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Rectangle fill="#f04579" height="74.0" layoutX="-9.0" layoutY="-19.0" stroke="#f04579" strokeType="OUTSIDE" width="763.0" />
+      <Rectangle arcHeight="50.0" arcWidth="50.0" height="492.0" layoutX="6.0" layoutY="62.0" stroke="#dfdada" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="INSIDE" width="744.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <TextField fx:id="productNameToEdit" layoutX="298.0" layoutY="94.0" prefHeight="35.0" prefWidth="392.0" style="-fx-border-radius: 10; -fx-background-radius: 12;" />
+      <TextField fx:id="newProductName" layoutX="298.0" layoutY="221.0" prefHeight="35.0" prefWidth="392.0" style="-fx-background-radius: 12; -fx-border-radius: 10;" />
+      <TextField fx:id="newProductPrice" layoutX="298.0" layoutY="272.0" prefHeight="35.0" prefWidth="392.0" style="-fx-background-radius: 12; -fx-border-radius: 10;" />
+      <TextField fx:id="newProductQuantity" layoutX="298.0" layoutY="324.0" prefHeight="35.0" prefWidth="392.0" style="-fx-background-radius: 12; -fx-border-radius: 10;" />
+      <TextField fx:id="newProductCategory" layoutX="298.0" layoutY="377.0" prefHeight="35.0" prefWidth="392.0" style="-fx-background-radius: 12; -fx-border-radius: 10;" />
+      <Label layoutX="66.0" layoutY="91.0" prefHeight="42.0" prefWidth="157.0" text="Product Name To Edit">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="66.0" layoutY="218.0" prefHeight="42.0" prefWidth="157.0" text="New Product Name">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="66.0" layoutY="269.0" prefHeight="42.0" prefWidth="157.0" text="New Product Price">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="66.0" layoutY="324.0" prefHeight="42.0" prefWidth="157.0" text="New Product Quantity">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="66.0" layoutY="373.0" prefHeight="42.0" prefWidth="173.0" text="New Product Category">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="14.0" />
+         </font>
+      </Label>
+      <Circle fill="#4e2c8a" layoutX="569.0" layoutY="32.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="559.0" layoutY="14.0" prefHeight="17.0" prefWidth="21.0" text="P" textAlignment="CENTER" textFill="#fffbfb">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="602.0" layoutY="19.0" prefHeight="25.0" prefWidth="124.0" text="Prajakta (Admin)" textFill="WHITE">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="31.0" layoutY="18.0" prefHeight="27.0" prefWidth="140.0" text="Edit Product" textFill="WHITE">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="22.0" />
+         </font>
+      </Label>
+      <Button fx:id="close" layoutX="333.0" layoutY="459.0" mnemonicParsing="false" onAction="#backToProductManagement" prefHeight="35.0" prefWidth="124.0" style="-fx-background-radius: 10; -fx-border-radius: 8; -fx-background-color: White; -fx-border-color: #e12c2c;" text="Close" textFill="#e12c2c">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="update" layoutX="508.0" layoutY="459.0" mnemonicParsing="false" onAction="#updateProduct" prefHeight="35.0" prefWidth="124.0" style="-fx-background-radius: 10; -fx-background-color: #80c455; -fx-border-color: #357c34; -fx-border-radius: 8;" text="Update" textFill="WHITE">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="66.0" layoutY="164.0" prefHeight="42.0" prefWidth="157.0" text="New Product Id">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="newProductId" layoutX="298.0" layoutY="168.0" prefHeight="35.0" prefWidth="392.0" style="-fx-background-radius: 12; -fx-border-radius: 10;" />
+   </children>
+</Pane>
